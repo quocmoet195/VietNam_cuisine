@@ -1,0 +1,103 @@
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(46, 144, 144);
+    height: 7vh;
+}
+
+.button {
+    font-size: 20px;
+    border: 0px;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    /* width: 130px;  */
+    margin-right: 20px;
+    color: var(--color);
+    transition: 0.3s;
+    --color: #ffffff;
+    --hover: yellow;
+
+}
+
+.button:hover {
+    color: #fe1909;
+}
+
+
+
+/* Main layout */
+.main-layout {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    position: relative;
+    font-family: 'Lobster', cursive;
+    background-image: url('/assets/images/main-background.png');
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.main-layout .container {
+    position: absolute;
+    left: 55%;
+    top: 45%;
+    transform: translate(-55%, -50%);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-layout .container .title span {
+    line-height: 1.1;
+    font-size: 70px;
+    display: block;
+}
+
+.main-layout .container .title span:nth-child(1),
+.main-layout .container .title span:nth-child(3) {
+    will-change: transform, opacity;
+    margin-left: 100px;
+    transition: 1.5s all;
+    transform: translateX(200px);
+}
+
+.main-layout .container .title span:nth-child(2),
+.main-layout .container .title span:nth-child(4) {
+    will-change: transform, opacity;
+    margin-left: 150px;
+    transition: 1.5s all;
+    transform: translateX(-200px);
+}
+
+.main-layout .container .title span.vietnam {
+    letter-spacing: 10px;
+    font-size: 100px;
+    color: #fe1909;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-right: 0;
+    transition: 0.5s all;
+    transform: translateY(100px);
+}

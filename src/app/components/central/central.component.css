@@ -1,0 +1,186 @@
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #c6a2a2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+
+
+.session {
+    background-color: #fdfdfd;
+    padding: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.session .title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #2e9090;
+    margin-bottom: 30px;
+}
+
+.content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+.session .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.session .gallery .col {
+    flex: 0 0 33%;
+    max-width: 28%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.session .gallery .col figure {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.session .gallery .col figure img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    filter: grayscale(0%);
+}
+
+.session .gallery .col figure:hover img {
+    filter: grayscale(0%) contrast(120%);
+    transform: scale(1.05);
+    opacity: 0.3;
+
+}
+
+.session .gallery .col figure p.image-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #000000;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1.2;
+    transition: 0.3s all;
+    text-transform: uppercase;
+}
+
+.session .gallery .col figure:hover p.image-name {
+    opacity: 1;
+    background-color: aliceblue;
+}
+
+/* 
+
+
+
+
+.session {
+    padding: 50px 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.region-title {
+    font-size: 32px;
+    color: #067070;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.area-title {
+    font-size: 28px;
+    color: #c0392b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.gallery .col {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.gallery figure:hover {
+    transform: scale(1.02);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery figure:hover img {
+    filter: brightness(80%) contrast(110%);
+}
+
+.gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery figure:hover figcaption {
+    opacity: 1;
+}
+
+*/
